@@ -1,14 +1,26 @@
 import knotpy as kp
 
-# n = 2,3,4,5,6,7
+# generiramo vse grafe z 2,... 7/8 vozlišč
+# združimo v eno tabelo
+# dobre (deg <= 4, sodo deg=3) ohranimo
+# simplify + canonical
+# odstranimo connected sums
+# yamada
+# bonded knote, ki imajo enolične yamade, shranimo (so že del klasifikacije)
+# bonded knote, ki si delijo yamado, poenostavimo: simplify depth = 1, depth=2,.. + preverimo connected sum
+
+# knots = [k for k in knots if not kp.is_connected_sum(k)]
+
+
+# n = 2,3,4,5,6,7, 8?
 graphs_10 = kp.load_diagrams("graphs_abc_10.txt", notation="plantri")
-graphs_2 = kp.load_diagrams("graphs_abc_2.txt", notation="plantri")
-graphs_3 = kp.load_diagrams("graphs_abc_3.txt", notation="plantri")
+#graphs_2 = kp.load_diagrams("graphs_abc_2.txt", notation="plantri")
+#graphs_3 = kp.load_diagrams("graphs_abc_3.txt", notation="plantri")
 """
 ...
 
 """
-all_graphs = graphs_10 + graphs_2 + graphs_3
+all_graphs = graphs_10 #+ graphs_2 + graphs_3
 
 print("Loaded", len(graphs_10), "graphs")
 
@@ -47,11 +59,7 @@ for k in kp.bar(knots):
 #kp.is_connected_sum(k)
 
 
-# odstraniti connected sums
-# yamada
-# ali so vse yamade različne?
-# grafe, ki imajo enolične yamade, shranimi (so že del klasifikacije)
-# grage, ki si delijo yamado, poenostavimo: simplify depth = 1, depth=2,..
+
 """
 
 """
