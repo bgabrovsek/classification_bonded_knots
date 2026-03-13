@@ -1,0 +1,11 @@
+bcde,aedc,abd,acbe,adb
+bcd,ade,aed,aceb,bdc
+bcd,adce,aebd,acb,bc
+bc,acd,aedb,bce,cd
+bc,ac,adeb,ce,cd
+bc,adce,aebd,bc,bc
+bc,ade,aed,bc,bc
+bcd,aedc,ab,abe,bd
+bc,ad,ade,bec,cd
+bc,ad,ae,be,cd
+bcd,adc,abe,aeb,cd

@@ -1,0 +1,3 @@
+bcd,adc,abd,acb
+bc,acd,adb,bc
+bc,ad,ad,bc
